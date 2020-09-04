@@ -1,0 +1,59 @@
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+//card 
+.card{
+    border-radius: 0.5rem;
+
+    .card-body{
+        padding: 1rem;
+    }
+}
+
+//Create Post 
+.create-post{
+    .user-logo{
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .createpost{
+        flex:1;
+
+        input{
+            width:100%;
+            border-radius: 20px;
+            background-color: #ddd;
+        }
+    }
+
+    .post-options{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.75rem;
+        p{
+            margin:0;
+        }
+        &:hover{
+            cursor: pointer;
+            background-color: #eee;
+            border-radius: 10px;
+        }
+        .post-img{
+            max-width: 30px;
+        }
+    }
+
+    hr{
+        margin-top:0.5rem;
+        margin-bottom:0.5rem;
+    }
+}

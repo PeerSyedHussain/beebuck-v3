@@ -1,0 +1,28 @@
+.story{
+    .icons-outer{
+        width: 40px;
+        height: 40px;
+        background-color: #00d9fd36;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        svg{
+            color:#039dfa;
+        }
+    }
+
+    h5,p{
+        margin:0px;
+    }
+
+    .box{
+        border-radius: 0.25rem;
+        padding: 0.75rem;
+        &:hover{
+            background-color: #ececec;
+            cursor:pointer;
+        }
+    }
+}
