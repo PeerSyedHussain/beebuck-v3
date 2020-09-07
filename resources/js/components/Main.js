@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TopNav from './layouts/TopNav';
-import '../../../public/css/app.css';
 import Newsfeed from './home/Newsfeed';
 import LeftSideBar from './home/LeftSideBar';
 import RightSideBar from './home/RightSideBar';
