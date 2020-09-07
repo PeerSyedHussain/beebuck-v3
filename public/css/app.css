@@ -10905,7 +10905,7 @@ a.text-dark:focus {
 }
 
 #topNav .navbar-brand {
-  max-width: 50px;
+  max-width: 75px;
 }
 
 #topNav .search-form {
@@ -10919,8 +10919,9 @@ a.text-dark:focus {
 
 #topNav .search-form .search-icon {
   position: absolute;
-  left: 6px;
+  left: 10px;
   color: #a0a0a0;
+  max-width: 18px;
 }
 
 #topNav .user-identity .user-logo {
@@ -10944,5 +10945,95 @@ a.text-dark:focus {
 
 #topNav .icons-outer:hover {
   background-color: #bcbcbc;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.card {
+  border-radius: 0.5rem;
+}
+
+.card .card-body {
+  padding: 1rem;
+}
+
+.create-post .user-logo {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.create-post .createpost {
+  flex: 1;
+}
+
+.create-post .createpost input {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #ddd;
+}
+
+.create-post .post-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem;
+}
+
+.create-post .post-options p {
+  margin: 0;
+}
+
+.create-post .post-options:hover {
+  cursor: pointer;
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.create-post .post-options .post-img {
+  max-width: 30px;
+}
+
+.create-post hr {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.story .icons-outer {
+  width: 40px;
+  height: 40px;
+  background-color: #00d9fd36;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.story .icons-outer svg {
+  color: #039dfa;
+}
+
+.story h5,
+.story p {
+  margin: 0px;
+}
+
+.story .box {
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+}
+
+.story .box:hover {
+  background-color: #ececec;
+  cursor: pointer;
 }
 

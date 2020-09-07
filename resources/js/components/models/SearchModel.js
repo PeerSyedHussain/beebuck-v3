@@ -45,7 +45,7 @@ class SearchModel extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            smShow : true,
+            smShow : false,
          };
     }
 
