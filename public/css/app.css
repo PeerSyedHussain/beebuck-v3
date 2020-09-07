@@ -10924,8 +10924,14 @@ a.text-dark:focus {
   max-width: 18px;
 }
 
-#topNav .user-identity .user-logo {
-  max-width: 40px;
+#topNav .user-logo {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
 }
 
 #topNav .nav-link {
@@ -10935,7 +10941,7 @@ a.text-dark:focus {
 #topNav .icons-outer {
   width: 40px;
   height: 40px;
-  background-color: #d0d0d0;
+  background-color: #e3e3e3;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -10944,7 +10950,22 @@ a.text-dark:focus {
 }
 
 #topNav .icons-outer:hover {
-  background-color: #bcbcbc;
+  background-color: #ccc;
+}
+
+#topNav .dropdown-menu {
+  left: -250px;
+  top: 120%;
+}
+
+#topNav .dropdown-menu.show {
+  width: 300px;
+  padding: 1rem;
+}
+
+#topNav .create,
+#topNav .account {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .row {
@@ -11005,6 +11026,111 @@ a.text-dark:focus {
 .create-post hr {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: unset;
+}
+
+.list-group-item:hover {
+  background-color: #ececec;
+  border-radius: 10px;
+}
+
+.leftside-bar .user-image {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #ececec;
+  padding: 5px;
+}
+
+.leftside-bar .list-group-item {
+  margin-right: 50px;
+  margin-left: 10px;
+}
+
+.leftside-bar .list-group-item:first-child {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.leftside-bar .user-icon {
+  max-width: 25px;
+  margin-right: 10px;
+}
+
+.leftside-bar .user-icon img {
+  width: 100%;
+}
+
+/* Rounded sliders */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 .story .icons-outer {

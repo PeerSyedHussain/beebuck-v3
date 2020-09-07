@@ -17,10 +17,14 @@
         }
     }
 
-    .user-identity{
-        .user-logo{
-            max-width: 40px;
-        }
+    .user-logo{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: transparent;
     }
 
     .nav-link{
@@ -30,14 +34,26 @@
     .icons-outer{
         width: 40px;
         height: 40px;
-        background-color: #d0d0d0;
+        background-color: #e3e3e3;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
         &:hover{        
-            background-color: #bcbcbc;
+            background-color: #ccc;
         }
+    }
+    .dropdown-menu{
+        left:-250px;
+        top:120%;
+        &.show{
+            width:300px;
+            padding: 1rem;
+        }
+    }
+
+    .create,.account{
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     }
 }
