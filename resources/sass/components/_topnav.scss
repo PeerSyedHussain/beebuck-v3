@@ -1,4 +1,7 @@
 #topNav{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
     .navbar-brand{
         max-width: 75px;
     }
@@ -8,6 +11,8 @@
         .search{
             border-radius: 20px;
             padding-left: 30px;
+            right: 0px;
+            top: -20px;
         }
         .search-icon{
             position: absolute;

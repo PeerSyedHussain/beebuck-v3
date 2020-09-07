@@ -9,7 +9,7 @@ function Main() {
     return (
         <div>
             <TopNav />
-            <div className='row justify-content-center'>
+            <div className='row justify-content-center' style={{paddingTop:"70px"}}>
                 <div className='col-md-3 pl-0'>
                     <LeftSideBar/>
                 </div>
