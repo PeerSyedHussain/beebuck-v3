@@ -17,11 +17,13 @@
         width: 40px;
         height: 40px;
         background-color: transparent;
-        border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        img{
+            border-radius: 50%;
+        }
     }
 
     .createpost{
@@ -75,13 +77,14 @@
         width: 100px;
         height: 100px;
         background-color: transparent;
-        border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        border: 1px solid #ececec;
         padding: 5px;
+        img{
+            border-radius: 50%;
+        }
     }
     .list-group-item{
         margin-right: 50px;
@@ -125,8 +128,10 @@
         margin-right:10px;
     }
     .frequent-page-logo{
-        width: 100px;
-        border-radius: 5px;
+        width: 120px;
+        img{
+            border-radius: 10px;
+        }
     }
 }
 

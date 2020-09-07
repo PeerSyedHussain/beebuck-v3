@@ -8,7 +8,8 @@ class TopNav extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            homeActive : false
+            homeActive : false, 
+            imgurl : '/images/home1.png'     
         };
     }
 
@@ -16,8 +17,13 @@ class TopNav extends Component {
         e.preventDefault();
         console.log(e,linkName)
 
+        this.setState({
+            homeActive : !this.state.homeActive,
+            imgurl : '/images/home_unselected.png'
+        })
     }
     render() {
+        const { imgurl} = this.state
         return (
             <>
                 <Navbar bg="white" expand="lg" id='topNav'>
@@ -35,8 +41,8 @@ class TopNav extends Component {
                             <Nav.Link href="#home" data-toggle="tooltip" 
                                     data-placement="bottom" title="Home" data-animation='true'
                                     onClick={(e) => this.checkActive(e,'home')}>
-                                    {/* <img src='/images/home_unselected.png'/> */}
-                                <FontAwesomeIcon  icon={faHome} pull="right" className="highlight" size="2x" />
+                                    <img src={imgurl} style={{width:"2em"}} />
+                                {/* <FontAwesomeIcon  icon={faHome} pull="right" className="highlight" size="2x" style={{color:this.state.homeActive ? "red" : "blue"}} /> */}
                             </Nav.Link>
                             <Nav.Link href="#home" data-toggle="tooltip" 
                                     data-placement="bottom" title="Friends" data-animation='true'>
@@ -59,7 +65,7 @@ class TopNav extends Component {
                         <div className='col-md-4 d-flex justify-content-around align-items-center'>
                             <div className='user-identity d-flex'>
                                 <Nav.Link href='#' className='user-logo mx-2 p-0'>
-                                    <img src='/images/beebuck-logo.png' className='w-100'/>
+                                    <img src='/images/sample/user-profile.jpg' className='w-100'/>
                                 </Nav.Link>
                                 <Navbar.Brand href="#">Faizal</Navbar.Brand>
                             </div>
@@ -114,7 +120,7 @@ class TopNav extends Component {
                                 <div className="dropdown-menu account" aria-labelledby="account">
                                     <a href="#" className="list-group-item list-group-item-action ">
                                         <div className='user-logo'>
-                                            <img src='/images/bee-beebuck.png' className='w-100'/>
+                                            <img src='/images/sample/user-profile.jpg' className='w-100'/>
                                         </div>
                                         <div className='mx-3'>
                                             <h5 className='m-0'>Faizal Hussain</h5>

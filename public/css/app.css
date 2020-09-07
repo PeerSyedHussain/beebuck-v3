@@ -10932,14 +10932,24 @@ a.text-dark:focus {
   max-width: 18px;
 }
 
-#topNav .user-logo {
+#topNav .user-identity,
+#topNav .account {
+  justify-content: center;
+  align-items: center;
+}
+
+#topNav .user-identity .user-logo,
+#topNav .account .user-logo {
   width: 50px;
-  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
   background-color: transparent;
+}
+
+#topNav .user-identity .user-logo img,
+#topNav .account .user-logo img {
+  border-radius: 50%;
 }
 
 #topNav .nav-link {
@@ -10978,11 +10988,14 @@ a.text-dark:focus {
   width: 40px;
   height: 40px;
   background-color: transparent;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.create-post .user-logo img {
+  border-radius: 50%;
 }
 
 .create-post .createpost {
@@ -11037,13 +11050,15 @@ a.text-dark:focus {
   width: 100px;
   height: 100px;
   background-color: transparent;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border: 1px solid #ececec;
   padding: 5px;
+}
+
+.leftside-bar .user-image img {
+  border-radius: 50%;
 }
 
 .leftside-bar .list-group-item {
@@ -11089,8 +11104,11 @@ a.text-dark:focus {
 }
 
 .rightside-bar .frequent-page-logo {
-  width: 100px;
-  border-radius: 5px;
+  width: 120px;
+}
+
+.rightside-bar .frequent-page-logo img {
+  border-radius: 10px;
 }
 
 /* Rounded sliders */

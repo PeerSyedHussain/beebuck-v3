@@ -11,7 +11,7 @@ class Newsfeed extends Component {
     render() {
         return (
             <>
-                <Story></Story>
+                {/* <Story></Story> */}
                 <div className='col-md-11 mx-auto'>
                     <CreatePost/>
                     <UploadedPost/>

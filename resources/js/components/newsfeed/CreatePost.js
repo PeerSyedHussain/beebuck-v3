@@ -15,7 +15,7 @@ class CreatePost extends Component {
                     <div className='card-body'>
                         <div className='d-flex'>
                             <div className='user-logo'>
-                                <img src='/images/beebuck-logo.png' className='w-100'/>
+                                <img src='/images/sample/user-profile.jpg' className='w-100'/>
                             </div>
                             <Form inline className='createpost ml-3'>
                                 <FormControl type="text" placeholder="Whats on your mind Faizal?" className="mr-sm-2 post" />

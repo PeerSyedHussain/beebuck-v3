@@ -38,23 +38,23 @@ class RightSideBar extends Component {
                         maxHeight:height,
                         position:"fixed"
                         }}>
-                    <h5 className='heading'>Your Own Pages</h5>
+                    <h5 className='heading'>Pages you own</h5>
                     <a href="#" className="list-group-item list-group-item-action ">
                         <div className='frequent-page-logo'>
-                            <img src='/images/group/your_pages.png' className='w-100'/>
+                            <img src='/images/sample/page-logo-1.png' className='w-100'/>
                         </div>
                         <div className='mx-3'>
-                            <h5 className='m-0'>Your Page Name 1</h5>
-                            <p className='m-0'>facebook.com</p>
+                            <h5 className='m-0'>iBeardclub</h5>
+                            <p className='m-0'>https://www.facebook.com/groups/beardclubuk/</p>
                         </div>
                     </a>
                     <a href="#" className="list-group-item list-group-item-action ">
                         <div className='frequent-page-logo'>
-                            <img src='/images/group/your_pages.png' className='w-100'/>
+                            <img src='/images/sample/page-logo-2.jpg' className='w-100'/>
                         </div>
                         <div className='mx-3'>
-                            <h5 className='m-0'>Your Page Name 2</h5>
-                            <p className='m-0'>beebuckapp.com</p>
+                            <h5 className='m-0'>Bharat Beard Club</h5>
+                            <p className='m-0'>https://www.facebook.com/BharatBeardClub/</p>
                         </div>
                     </a>
                     <hr className='w-100'/>

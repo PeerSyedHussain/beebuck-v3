@@ -21,9 +21,9 @@ class LeftSideBar extends Component {
       
       updateWindowDimensions() {
         this.setState({
-            width: window.innerWidth, height: window.innerHeight -60.8
+            width: window.innerWidth, height: window.innerHeight -75
         },() =>  {
-            console.log(window.innerHeight-60.8)
+            console.log(window.innerHeight-75)
         });
     }
 
@@ -42,9 +42,9 @@ class LeftSideBar extends Component {
                     <a href="#"
                         className="list-group-item list-group-item-action d-flex flex-column align-items-center">
                         <div className='user-image'>
-                            <img src='/images/bee-beebuck.png' className='w-100'/>
+                            <img src='/images/sample/user-profile.jpg' className='w-100'/>
                         </div>
-                        <h4>Beebuck</h4>
+                        <h4>Faizal</h4>
                     </a>
                     <a href="#"
                         className="list-group-item list-group-item-action">
