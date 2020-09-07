@@ -10938,21 +10938,6 @@ a.text-dark:focus {
   cursor: pointer;
 }
 
-#topNav .icons-outer {
-  width: 40px;
-  height: 40px;
-  background-color: #e3e3e3;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-#topNav .icons-outer:hover {
-  background-color: #ccc;
-}
-
 #topNav .dropdown-menu {
   left: -250px;
   top: 120%;
@@ -11070,6 +11055,34 @@ a.text-dark:focus {
 
 .leftside-bar .user-icon img {
   width: 100%;
+}
+
+.icons-outer {
+  width: 40px;
+  height: 40px;
+  background-color: #e3e3e3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icons-outer:hover {
+  background-color: #ccc;
+}
+
+.rightside-bar .heading {
+  color: #65676b;
+}
+
+.rightside-bar.list-group {
+  margin-right: 10px;
+}
+
+.rightside-bar .frequent-page-logo {
+  width: 100px;
+  border-radius: 5px;
 }
 
 /* Rounded sliders */

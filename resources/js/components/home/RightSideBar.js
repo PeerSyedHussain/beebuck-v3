@@ -3,152 +3,84 @@ import React, { Component } from 'react';
 class RightSideBar extends Component {
     constructor(props) {
         super(props);
-        this.state = {  };
+        this.state = { 
+            width: 0, 
+            height: 0
+       };
+       this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
+
+    componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+    }
+      
+      componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+      
+      updateWindowDimensions() {
+        this.setState({
+            width: window.innerWidth, height: window.innerHeight -60.8
+        },() =>  {
+            console.log(window.innerHeight-60.8)
+        });
+    }
+
     render() {
+        const {height} = this.state;
         return (
             <>
-                <div>
-                    <div className="list-group leftside-bar" 
+                <div className="list-group rightside-bar mt-3" 
                     style={{
                         overflowY:"scroll",
                         overflowX:"hidden",
-                        // maxHeight:height,
+                        maxHeight:height,
                         position:"fixed"
                         }}>
-                    <h5>Your Own Pages</h5>
-                    <a href="#"
-                        className="list-group-item list-group-item-action">
-                        <div className='user-icon'>
-                            <img src='/images/profile.png'/>
+                    <h5 className='heading'>Your Own Pages</h5>
+                    <a href="#" className="list-group-item list-group-item-action ">
+                        <div className='frequent-page-logo'>
+                            <img src='/images/group/your_pages.png' className='w-100'/>
                         </div>
-                        Profile
-                    </a>
-                    <a href="#"
-                        className="list-group-item list-group-item-action ">
-                        <div className='user-icon'>
-                            <img src='/images/friends.png'/>
+                        <div className='mx-3'>
+                            <h5 className='m-0'>Your Page Name 1</h5>
+                            <p className='m-0'>facebook.com</p>
                         </div>
-                        Friends
                     </a>
-                    <a href="#"
-                        className="list-group-item list-group-item-action">
-                        <div className='user-icon'>
-                            <img src='/images/group/own_pages.png'/>
+                    <a href="#" className="list-group-item list-group-item-action ">
+                        <div className='frequent-page-logo'>
+                            <img src='/images/group/your_pages.png' className='w-100'/>
                         </div>
-                        Pages you own
-                    </a>
-                    <a href="#"
-                        className="list-group-item list-group-item-action">
-                        <div className='user-icon'>
-                            <img src='/images/group/your_pages.png'/>
+                        <div className='mx-3'>
+                            <h5 className='m-0'>Your Page Name 2</h5>
+                            <p className='m-0'>beebuckapp.com</p>
                         </div>
-                        Your Pages
                     </a>
-                    <a href="#"
-                        className="list-group-item list-group-item-action">
-                        <div className='user-icon'>
-                            <img src='/images/group/groups_1.png'/>
+                    <hr className='w-100'/>
+
+                    <h5 className='heading'>Page</h5>
+                    <a href="#" className="list-group-item list-group-item-action ">
+                        <div className='icons-outer'>
+                            <img src='/images/group/your_pages.png' className='w-50'/>
                         </div>
-                        Groups
-                    </a>
-                    <a href="#"
-                        className="list-group-item list-group-item-action">
-                        <div className='user-icon'>
-                            <img src='/images/group/sub_group_1.png'/>
+                        <div className='mx-3'>
+                            {/* <h5 className='m-0'>Pages</h5> */}
+                            <p className='m-0'>Create your own page</p>
                         </div>
-                        Sub-groups
                     </a>
-                    <a href="#"
-                        className="list-group-item list-group-item-action">
-                        <div className='user-icon'>
-                            <img src='/images/chat.png'/>
+
+                    <hr className='w-100'/>
+                    <h5 className='heading'>Chat</h5>
+                    <a href="#" className="list-group-item list-group-item-action ">
+                        <div className='icons-outer'>
+                            <img src='/images/chat.png' className='w-50'/>
                         </div>
-                        Chat
-                    </a>
-                    <a href="#"
-                        className="list-group-item list-group-item-action">
-                        <div className='user-icon'>
-                            <img src='/images/bell.png'/>
+                        <div className='mx-3'>
+                            {/* <h5 className='m-0'>Chat</h5> */}
+                            <p className='m-0'>Create Group Chat</p>
                         </div>
-                        Notification
                     </a>
-                    <a href="#"
-                        className="list-group-item list-group-item-action">
-                        <div className='user-icon'>
-                            <img src='/images/photos.png'/>
-                        </div>
-                        Photos
-                    </a>
-                    <a href="#"
-                        className="list-group-item list-group-item-action">
-                        <div className='user-icon'>
-                            <img src='/images/video.png'/>
-                        </div>
-                        Videos
-                    </a>
-                    <a href="#"
-                        className="list-group-item list-group-item-action">
-                        <div className='user-icon'>
-                            <img src='/images/file.png'/>
-                        </div>
-                        Files
-                    </a>
-                    <a href="#"
-                        className="list-group-item list-group-item-action">
-                        <div className='user-icon'>
-                            <img src='/images/bell.png'/>
-                        </div>
-                        Birthday's
-                    </a>
-                    <a href="#"
-                        className="list-group-item list-group-item-action">
-                        <div className='user-icon'>
-                            <img src='/images/privacy.png'/>
-                        </div>
-                        Privacy Settings
-                    </a>
-                    <a href="#"
-                        className="list-group-item list-group-item-action">
-                        <div className='user-icon'>
-                            <img src='/images/ourpolicie.png'/>
-                        </div>
-                        Our Policies
-                    </a>
-                    <a href="#"
-                        className="list-group-item list-group-item-action">
-                        <div className='user-icon'>
-                            <img src='/images/profile.png'/>
-                        </div>
-                        <label className='m-0 mr-3'>English</label>
-                        <label className="switch m-0">
-                            <input type="checkbox"/>
-                            <span className="slider round"></span>
-                        </label>
-                        <label className='m-0 ml-3'>Thai</label>
-                    </a>
-                    <a href="#"
-                        className="list-group-item list-group-item-action">
-                        <div className='user-icon'>
-                            <img src='/images/profile.png'/>
-                        </div>
-                        Help and Support
-                    </a>
-                    <a href="#"
-                        className="list-group-item list-group-item-action">
-                        <div className='user-icon'>
-                            <img src='/images/changepassword.png'/>
-                        </div>
-                        Change Password
-                    </a>
-                    <a href="#"
-                        className="list-group-item list-group-item-action">
-                        <div className='user-icon'>
-                            <img src='/images/icons/signout.png'/>
-                        </div>
-                        Sign out
-                    </a>
-                </div>
                 </div>
             </>
         );

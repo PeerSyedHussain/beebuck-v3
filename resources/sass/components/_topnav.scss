@@ -31,19 +31,7 @@
         cursor: pointer;
     }
 
-    .icons-outer{
-        width: 40px;
-        height: 40px;
-        background-color: #e3e3e3;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        &:hover{        
-            background-color: #ccc;
-        }
-    }
+
     .dropdown-menu{
         left:-250px;
         top:120%;
